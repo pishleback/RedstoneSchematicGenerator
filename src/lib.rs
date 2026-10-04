@@ -36,8 +36,9 @@ impl Compass {
 }
 
 fn barrel_ss(ss: usize) -> HashMap<String, fastnbt::Value> {
-    let mut n = ((ss * 27).div_ceil(14) - 2).max(ss);
+    let ss = std::cmp::min(ss, 15);
 
+    let mut n = ((ss * 27).div_ceil(14) - 2).max(ss);
     if ss == 14 {
         n += 1;
     }

@@ -1,4 +1,4 @@
-use schemgen::{Block, Blocks};
+use redstone_schem::{Block, Blocks};
 
 fn main() {
     let mut schem = Blocks::new();
