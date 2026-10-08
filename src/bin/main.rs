@@ -32,3 +32,19 @@ fn main() {
     let mut file = std::fs::File::create("example.schem").unwrap();
     schem.finish(&mut file).unwrap();
 }
+
+// use redstone_schem::examples::rom_16kb_barrel::Rom;
+
+// fn main() {
+//     let mut rom = Rom::default();
+
+//     for i in 0..512 {
+//         rom.data[i] = i as u8;
+//     }
+
+//     println!("{:?}", rom);
+
+//     let schem = rom.to_schem();
+//     let mut file = std::fs::File::create("example.schem").unwrap();
+//     schem.finish(&mut file).unwrap();
+// }

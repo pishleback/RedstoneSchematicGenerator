@@ -2,6 +2,7 @@ use mc_schem::fastnbt;
 use mc_schem::{Block as PlainBlock, region::Region};
 use std::collections::HashMap;
 
+pub mod examples;
 pub mod transforms;
 
 #[derive(Debug, Clone, Copy)]
